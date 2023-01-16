@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"><!--linking css to html-->
+    <title>Support Organic Farming</title>
+</head>
+
+
+<body>
+    <nav class="navbar background"> <!--creating navbar--> 
+      <ul class="nav-list"><!--creating navlist-->
+        <div class="logo"><img src="img/img.jpg" alt="logo"></div><!--for creating logo-->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="rightNav">
+        <input type="text" name="search" id="search">
+        <button class="btn btn-sm">Search</button><!--creating different buttons-->
+       </div>
+
+    </nav>
+    <section class="background firstSection">
+      <div class="box-main">
+        <div class="firstHalf">
+          <p class="text-big">EAT CLEAN AND GREEN</p>
+          <p class="text-small">Organic farming yields more nutritious and safe food. The popularity of organic food is growing dramatically as consumer seeks the organic foods that are thought to be healthier and safer. Thus, organic food perhaps ensures food safety from farm to plate.</p>
+        <div class="buttons">
+          <button class="btn">GET STARTED</button>
+         
+        </div>
+        </div>
+        <div class="SecondHalf">
+          <img src="img/img3.jpg"alt="organic farming image">
+        </div>
+         
+      </div>
+
+    </section>
+
+    <section class="section" id="services">
+      <div class="paras">
+      <p class ="sectionTag text-big">WHY ORGANIC FARMING IS BETTER</p>
+       <p class="sectionSubTag text-small">Organic farming is widely considered to be a far more sustainable alternative when it comes to food production. The lack of pesticides and wider variety of plants enhances biodiversity and results in better soil quality and reduced pollution from fertilizer or pesticide run-off.</p>
+      </div>
+       <div class="thumbnail">
+        <img src="https://source.unsplash.com/900x900/?farming,agriculture" alt="farming image" class="imgfluid">
+       </div>
+      </section>
+
+      <section class="section section-left" id="about">
+        <div class="paras">
+        <p class ="sectionTag text-big">NEED OF ORGANIC FARMING</p>
+         <p class="sectionSubTag text-small">It helps to maintain environment health by reducing the level of pollution. It reduces human and animal health hazards by reducing the level of residues in the product. It helps in keeping agricultural production at a sustainable level. It reduces the cost of agricultural production and also improves the soil health.</p>
+        </div>
+         <div class="thumbnail">
+          <img src="https://source.unsplash.com/900x900/?farming,crops" alt="farming image" class="imgfluid">
+         </div>
+        </section>
+
+        <section class="section">
+          <div class="paras">
+          <p class ="sectionTag text-big">PROCESS OF ORGANIC FARMING</p>
+           <p class="sectionSubTag text-small">More specifically, organic farming entails: Use of cover crops, green manures, animal manures and crop rotations to fertilize the soil, maximize biological activity and maintain long-term soil health. Use of biological control, crop rotations and other techniques to manage weeds, insects and diseases.</p>
+          </div>
+           <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?farming,planting" alt="farming image" class="imgfluid">
+           </div>
+          </section>
+          <hr>
+          <section class="contact" id="contact">
+           <h2 class="text-center">Contact Us</h2>
+           <div class="form">
+           <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+           <input class="form-input" type="text" name="phone" id="name" placeholder="Enter Your phone">
+           <input class="form-input" type="email" name="email" id="name" placeholder="Enter Your email">
+               <textarea name="text" id="text" cols="165" rows="10" placeholder= "Elaborate your concern"></textarea>
+           <button class="btn-dark">Submit</button>
+           </div>
+          </section>
+  
+          <footer class="background">
+            <p class="text-center">
+            Copyright &copy; 2022 www.gogreen.com - All right reserved
+          </p>
+          </footer>
+
+</body>
+</html>
+
+
+----------------CSS CODE Start from here-----------------
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    width:20%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width:90%; 
+    border: 3px solid white;
+    border-radius: 50px;  
+}
+
+.navbar{
+    display: flex; /* arrange in row*/
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    cursor: pointer; 
+}
+  
+.nav-list{
+    width: 50%;
+    
+    display:flex;
+    align-item:center;
+
+}
+
+.nav-list li{
+    list-style:none;
+    padding: 26px 30px;
+
+}
+
+.nav-list li a{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.nav-list li a:hover{
+    text-decoration:none;
+    color: grey;
+
+}
+
+.rightNav{
+   
+    width:50%;
+    text-align:right;
+    padding: 0 23px;
+}
+
+#search{
+    padding:5px;
+    font-size:17px;
+    border:2px solid grey;
+    border-radius:9px;
+}
+
+.background{
+    background: rgba(0,0,0,0.5) url('../img/img2.jpeg');
+    background-size:cover;
+    background-blend-mode:darken;
+}
+
+.firstSection{
+    height:  100vh
+}
+
+.box-main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:white;
+    font-family: 'Courier New', Courier, monospace ;
+    height: 80%;
+ 
+
+}
+
+.secondHalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+
+}
+
+.text-big{
+    font-size: 60px;
+}
+
+.text-small{
+    font-size: 25px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color:white;
+    cursor: pointer;
+
+}
+
+.btn-dark{
+    color:black;
+    border:2px solid grey;
+}
+
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.section-left{
+    flex-direction: row-reverse;
+
+}
+
+.paras{
+    padding: 0px 65px;
+}
+
+.thumbnail img{
+    width: 250px;
+}
+
+.contact{
+    background-color: antiquewhite;
+    height: 833px;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.form{
+    max-width: 1200px;
+    margin: 42px auto;
+}
+
+.form-input{
+    margin: 30px 0;
+    padding: 5px 3px; 
+    width: 100%;
+    font-size:19px;
+    border:2px solid grey;
+    border-radius:6px;
+}
+
+.text-center {
+    color: white;
+    text-align: center;
+}
+
+
+
+
